@@ -1,0 +1,127 @@
+:root {
+    --primary: #1E3A8A;
+    --secondary: #2563EB;
+    --success: #16A34A;
+    --danger: #DC2626;
+    --warning: #D97706;
+}
+
+.hero {
+    background: linear-gradient(135deg, #1E3A8A, #2563EB);
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn-primary {
+    background: white;
+    color: var(--primary);
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.container-dashboard {
+    max-width: 1400px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.section-title {
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid var(--secondary);
+    padding-bottom: .5rem;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 18px;
+    border-left: 6px solid var(--secondary);
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
+.card h3 {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.card-title {
+    font-size: 1.2rem !important;
+    margin-bottom: 1rem;
+}
+
+.label {
+    color: #64748B;
+}
+
+.positive {
+    color: var(--success);
+    font-weight: bold;
+}
+
+.negative {
+    color: var(--danger);
+    font-weight: bold;
+}
+
+.table-container {
+    overflow-x: auto;
+    background: white;
+    border-radius: 18px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: var(--primary);
+    color: white;
+}
+
+th,
+td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tbody tr:hover {
+    background: #eff6ff;
+}
+
+.alert {
+    padding: 1rem;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.danger {
+    background: #fee2e2;
+    border-left: 6px solid var(--danger);
+}
+
+.success {
+    background: #dcfce7;
+    border-left: 6px solid var(--success);
+}
+
+.warning {
+    background: #fef3c7;
+    border-left: 6px solid var(--warning);
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
