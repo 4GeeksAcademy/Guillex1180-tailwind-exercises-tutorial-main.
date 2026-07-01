@@ -4,316 +4,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Influencer</title>
+    <title>Dashboard de Rendimiento Influencer</title>
 
-    <!-- Tailwind CSS v4 -->
+    <!-- Solo HTML + Tailwind CSS v4 (sin React/Vue y sin cdn.tailwindcss.com) -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="bg-slate-100">
-
-    <!-- HEADER -->
-
-    <header class="hero">
-        <div>
-            <h1 class="text-3xl font-bold">
-                Dashboard Influencer
-            </h1>
-
-            <p class="mt-2 opacity-90">
-                Control de ingresos, conversiones y rendimiento de campañas
-            </p>
+<body class="min-h-screen bg-gradient-to-b from-[#f5eee6] via-[#e8f3f1] to-[#f5eee6] text-slate-900">
+    <header class="border-b border-slate-300/60 bg-white/70 backdrop-blur-sm">
+        <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-6 sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
+            <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">Solo HTML + Tailwind CSS v4</p>
+                <h1 class="mt-2 text-2xl font-black leading-tight sm:text-3xl lg:text-4xl">Dashboard de Comisiones de Influencer</h1>
+                <p class="mt-2 max-w-2xl text-sm text-slate-600 sm:text-base">Consolidado de Instagram, TikTok y YouTube para responder rápido: ingresos, conversión, ROI y engagement.</p>
+            </div>
+            <button class="rounded-full bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-900/20 transition hover:translate-y-[-1px] hover:bg-slate-700">Exportar reporte</button>
         </div>
-
-        <button class="btn-primary">
-            Exportar Reporte
-        </button>
     </header>
 
-    <main class="container-dashboard">
-
-        <!-- KPI -->
-
-        <section>
-
-            <h2 class="section-title">
-                Indicadores Principales (KPIs)
-            </h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
-
-                <article class="card">
-                    <span class="label">Comisiones</span>
-                    <h3>€2,565</h3>
-                    <p class="positive">+18%</p>
-                </article>
-
-                <article class="card">
-                    <span class="label">Ventas Totales</span>
-                    <h3>210</h3>
-                    <p class="positive">+34 ventas</p>
-                </article>
-
-                <article class="card">
-                    <span class="label">Conversión</span>
-                    <h3>4.8%</h3>
-                    <p class="negative">-0.6%</p>
-                </article>
-
-                <article class="card">
-                    <span class="label">Engagement</span>
-                    <h3>7.2%</h3>
-                    <p class="positive">Excelente</p>
-                </article>
-
+    <main class="mx-auto flex max-w-7xl flex-col gap-10 px-4 py-8 sm:px-6 lg:px-8">
+        <section class="rounded-3xl border border-slate-300/60 bg-white/85 p-4 shadow-xl shadow-slate-500/10 sm:p-6 lg:p-8">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+                <h2 class="text-xl font-extrabold sm:text-2xl">Bloque Superior: KPIs Clave</h2>
+                <p class="text-sm text-slate-600">Periodo: junio 2026</p>
             </div>
 
+            <div class="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
+                <article class="rounded-2xl border border-emerald-200 bg-emerald-50 p-4">
+                    <p class="text-xs font-semibold uppercase tracking-wide text-emerald-700">Comisiones totales</p>
+                    <p class="mt-3 text-3xl font-black">€2,565</p>
+                    <p class="mt-2 text-sm font-semibold text-emerald-700">+18% vs mes anterior</p>
+                </article>
+
+                <article class="rounded-2xl border border-sky-200 bg-sky-50 p-4">
+                    <p class="text-xs font-semibold uppercase tracking-wide text-sky-700">Productos top</p>
+                    <p class="mt-3 text-3xl font-black">B y C</p>
+                    <p class="mt-2 text-sm font-semibold text-sky-700">80.3% del ingreso total</p>
+                </article>
+
+                <article class="rounded-2xl border border-amber-200 bg-amber-50 p-4">
+                    <p class="text-xs font-semibold uppercase tracking-wide text-amber-700">Tasa de conversión</p>
+                    <p class="mt-3 text-3xl font-black">4.8%</p>
+                    <p class="mt-2 text-sm font-semibold text-amber-700">210 conversiones / 120k alcance</p>
+                </article>
+
+                <article class="rounded-2xl border border-violet-200 bg-violet-50 p-4">
+                    <p class="text-xs font-semibold uppercase tracking-wide text-violet-700">Retorno por plataforma</p>
+                    <p class="mt-3 text-3xl font-black">4.5x</p>
+                    <p class="mt-2 text-sm font-semibold text-violet-700">TikTok mejor ROI</p>
+                </article>
+            </div>
         </section>
 
-        <!-- DRIVERS -->
+        <section class="rounded-3xl border border-slate-300/60 bg-white/85 p-4 shadow-xl shadow-slate-500/10 sm:p-6 lg:p-8">
+            <h2 class="text-xl font-extrabold sm:text-2xl">Bloque Intermedio: Drivers</h2>
 
-        <section>
-
-            <h2 class="section-title">
-                Drivers del Resultado
-            </h2>
-
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
-
-                <article class="card">
-                    <h3 class="card-title">
-                        Funnel de Ventas
-                    </h3>
-
-                    <ul>
-                        <li>👀 Alcance: 120,000</li>
-                        <li>🖱️ Clics: 8,400</li>
-                        <li>🛒 Conversiones: 210</li>
+            <div class="mt-5 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+                <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                    <h3 class="text-lg font-bold">Driver 1: Funnel de ventas</h3>
+                    <ul class="mt-3 space-y-2 text-sm text-slate-700">
+                        <li class="flex items-center justify-between"><span>Alcance</span><span class="font-semibold">120,000</span></li>
+                        <li class="flex items-center justify-between"><span>Clics</span><span class="font-semibold">8,400</span></li>
+                        <li class="flex items-center justify-between"><span>Conversiones</span><span class="font-semibold">210</span></li>
+                        <li class="flex items-center justify-between border-t border-slate-200 pt-2"><span>CTR</span><span class="font-semibold">7.0%</span></li>
                     </ul>
                 </article>
 
-                <article class="card">
-                    <h3 class="card-title">
-                        Rendimiento por Plataforma
-                    </h3>
-
-                    <ul>
-                        <li>Instagram → ROI 3.8x</li>
-                        <li>TikTok → ROI 4.5x</li>
-                        <li>YouTube → ROI 2.1x</li>
+                <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                    <h3 class="text-lg font-bold">Driver 2: Rendimiento por plataforma</h3>
+                    <ul class="mt-3 space-y-2 text-sm text-slate-700">
+                        <li class="flex items-center justify-between"><span>Instagram</span><span class="font-semibold">ROI 3.8x</span></li>
+                        <li class="flex items-center justify-between"><span>TikTok</span><span class="font-semibold">ROI 4.5x</span></li>
+                        <li class="flex items-center justify-between"><span>YouTube</span><span class="font-semibold">ROI 2.1x</span></li>
+                        <li class="flex items-center justify-between border-t border-slate-200 pt-2"><span>Ganador</span><span class="font-semibold text-emerald-700">TikTok</span></li>
                     </ul>
                 </article>
 
-                <article class="card">
-                    <h3 class="card-title">
-                        Rendimiento por Producto
-                    </h3>
-
-                    <ul>
-                        <li>Producto A → €525</li>
-                        <li>Producto B → €1080</li>
-                        <li>Producto C → €960</li>
+                <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4 md:col-span-2 xl:col-span-1">
+                    <h3 class="text-lg font-bold">Driver 3: Engagement por producto</h3>
+                    <ul class="mt-3 space-y-2 text-sm text-slate-700">
+                        <li class="flex items-center justify-between"><span>Producto A</span><span class="font-semibold">6.7%</span></li>
+                        <li class="flex items-center justify-between"><span>Producto B</span><span class="font-semibold">8.1%</span></li>
+                        <li class="flex items-center justify-between"><span>Producto C</span><span class="font-semibold">7.4%</span></li>
+                        <li class="flex items-center justify-between border-t border-slate-200 pt-2"><span>Mejor score</span><span class="font-semibold text-emerald-700">Producto B</span></li>
                     </ul>
                 </article>
-
             </div>
-
         </section>
 
-        <!-- PRODUCTOS -->
+        <section class="rounded-3xl border border-slate-300/60 bg-white/85 p-4 shadow-xl shadow-slate-500/10 sm:p-6 lg:p-8">
+            <h2 class="text-xl font-extrabold sm:text-2xl">Bloque Inferior: Detalles Operacionales</h2>
 
-        <section>
-
-            <h2 class="section-title">
-                Tabla de Productos
-            </h2>
-
-            <div class="table-container">
-
-                <table>
-
-                    <thead>
-                        <tr>
-                            <th>Producto</th>
-                            <th>Precio</th>
-                            <th>Ventas</th>
-                            <th>Comisión</th>
-                            <th>ROI</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-
-                        <tr>
-                            <td>Producto A</td>
-                            <td>€50</td>
-                            <td>70</td>
-                            <td>€525</td>
-                            <td>3.2x</td>
-                        </tr>
-
-                        <tr>
-                            <td>Producto B</td>
-                            <td>€120</td>
-                            <td>60</td>
-                            <td>€1080</td>
-                            <td>4.1x</td>
-                        </tr>
-
-                        <tr>
-                            <td>Producto C</td>
-                            <td>€80</td>
-                            <td>80</td>
-                            <td>€960</td>
-                            <td>3.7x</td>
-                        </tr>
-
-                    </tbody>
-
-                </table>
-
-            </div>
-
-        </section>
-
-        <!-- PLATAFORMAS -->
-
-        <section>
-
-            <h2 class="section-title">
-                Tabla de Plataformas
-            </h2>
-
-            <div class="table-container">
-
-                <table>
-
-                    <thead>
-                        <tr>
-                            <th>Plataforma</th>
-                            <th>Alcance</th>
-                            <th>Engagement</th>
-                            <th>Conversiones</th>
-                            <th>Mejor Métrica</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-
-                        <tr>
-                            <td>Instagram</td>
-                            <td>45000</td>
-                            <td>7.8%</td>
-                            <td>85</td>
-                            <td>Engagement</td>
-                        </tr>
-
-                        <tr>
-                            <td>TikTok</td>
-                            <td>60000</td>
-                            <td>8.4%</td>
-                            <td>95</td>
-                            <td>Conversión</td>
-                        </tr>
-
-                        <tr>
-                            <td>YouTube</td>
-                            <td>15000</td>
-                            <td>5.3%</td>
-                            <td>30</td>
-                            <td>Retención</td>
-                        </tr>
-
-                    </tbody>
-
-                </table>
-
-            </div>
-
-        </section>
-
-        <!-- CAMPAÑAS -->
-
-        <section>
-
-            <h2 class="section-title">
-                Tabla de Campañas
-            </h2>
-
-            <div class="table-container">
-
-                <table>
-
-                    <thead>
-                        <tr>
-                            <th>Fecha</th>
-                            <th>Producto</th>
-                            <th>Plataforma</th>
-                            <th>Resultado</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-
-                        <tr>
-                            <td>01/06</td>
-                            <td>Producto B</td>
-                            <td>TikTok</td>
-                            <td>95 ventas</td>
-                        </tr>
-
-                        <tr>
-                            <td>10/06</td>
-                            <td>Producto A</td>
-                            <td>Instagram</td>
-                            <td>70 ventas</td>
-                        </tr>
-
-                        <tr>
-                            <td>15/06</td>
-                            <td>Producto C</td>
-                            <td>YouTube</td>
-                            <td>45 ventas</td>
-                        </tr>
-
-                    </tbody>
-
-                </table>
-
-            </div>
-
-        </section>
-
-        <!-- ALERTAS -->
-
-        <section>
-
-            <h2 class="section-title">
-                Alertas y Oportunidades
-            </h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-
-                <article class="alert danger">
-                    Conversión bajó 0.6%
+            <div class="mt-5 grid grid-cols-1 gap-5 xl:grid-cols-3">
+                <article class="rounded-2xl border border-slate-200 xl:col-span-2">
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full text-left text-sm">
+                            <thead class="bg-slate-900 text-white">
+                                <tr>
+                                    <th class="px-4 py-3 font-semibold">Producto</th>
+                                    <th class="px-4 py-3 font-semibold">Precio</th>
+                                    <th class="px-4 py-3 font-semibold">Ventas</th>
+                                    <th class="px-4 py-3 font-semibold">Comisión</th>
+                                    <th class="px-4 py-3 font-semibold">ROI</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-slate-200 bg-white">
+                                    <td class="px-4 py-3">Producto A</td>
+                                    <td class="px-4 py-3">€50</td>
+                                    <td class="px-4 py-3">70</td>
+                                    <td class="px-4 py-3">€525</td>
+                                    <td class="px-4 py-3">3.2x</td>
+                                </tr>
+                                <tr class="border-b border-slate-200 bg-slate-50">
+                                    <td class="px-4 py-3">Producto B</td>
+                                    <td class="px-4 py-3">€120</td>
+                                    <td class="px-4 py-3">60</td>
+                                    <td class="px-4 py-3">€1,080</td>
+                                    <td class="px-4 py-3">4.1x</td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td class="px-4 py-3">Producto C</td>
+                                    <td class="px-4 py-3">€80</td>
+                                    <td class="px-4 py-3">80</td>
+                                    <td class="px-4 py-3">€960</td>
+                                    <td class="px-4 py-3">3.7x</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </article>
 
-                <article class="alert success">
-                    TikTok es el mejor ROI
-                </article>
+                <article class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                    <h3 class="text-lg font-bold">Top plataformas</h3>
+                    <ul class="mt-3 space-y-3 text-sm">
+                        <li class="rounded-xl bg-white px-3 py-2 shadow-sm">1. TikTok: ROI 4.5x | Conv. 95</li>
+                        <li class="rounded-xl bg-white px-3 py-2 shadow-sm">2. Instagram: ROI 3.8x | Conv. 85</li>
+                        <li class="rounded-xl bg-white px-3 py-2 shadow-sm">3. YouTube: ROI 2.1x | Conv. 30</li>
+                    </ul>
 
-                <article class="alert warning">
-                    Revisar YouTube
+                    <h3 class="mt-6 text-lg font-bold">Alertas</h3>
+                    <ul class="mt-3 space-y-3 text-sm">
+                        <li class="rounded-xl border border-rose-200 bg-rose-50 px-3 py-2 text-rose-700">Caída de conversión de 0.6% en YouTube.</li>
+                        <li class="rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2 text-emerald-700">Pico de rendimiento en TikTok (campaña Producto B).</li>
+                        <li class="rounded-xl border border-amber-200 bg-amber-50 px-3 py-2 text-amber-700">Oportunidad: aumentar frecuencia en Instagram Reels.</li>
+                    </ul>
                 </article>
-
             </div>
-
         </section>
-
     </main>
-
 </body>
 
 </html>
